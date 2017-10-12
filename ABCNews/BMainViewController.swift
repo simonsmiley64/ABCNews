@@ -12,6 +12,9 @@ class BMainViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet var tableView: UITableView!
     
+    var newsItems = [BNewsItem]()
+    let searchURL = URL(string: "https://api.rss2json.com/v1/api.json?rss_url=http://www.abc.net.au/news/feed/51120/rss.xml")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,10 +23,20 @@ class BMainViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Register our two custom cells
         self.tableView.register(UINib(nibName: "BPrimaryCell", bundle: nil), forCellReuseIdentifier: "BPrimaryCell")
         self.tableView.register(UINib(nibName: "BSecondaryCell", bundle: nil), forCellReuseIdentifier: "BSecondaryCell")
+        
+        self.refreshNewsStories()
     }
 
+    func refreshNewsStories() {
+        
+        BAPIManager.sharedInstance.getJsonFromURL(url: searchURL!) { (news) in
+            self.newsItems = news as! [BNewsItem]
+            self.tableView.reloadData()
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return newsItems.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -32,9 +45,15 @@ class BMainViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cellString = indexPath.row == 0 ? "BPrimaryCell" : "BSecondaryCell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellString)
-        
-        return cell!
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "BPrimaryCell") as! BPrimaryCell
+            cell.configureWithNews(newsItem: newsItems[indexPath.row])
+            return cell
+        }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "BSecondaryCell") as! BSecondaryCell
+            cell.configureWithNews(newsItem: newsItems[indexPath.row])
+            return cell
+        }
     }
 }

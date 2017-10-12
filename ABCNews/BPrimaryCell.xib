@@ -24,7 +24,7 @@
                             <constraint firstAttribute="height" constant="160" id="BJ8-pO-M5K"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcN-Mv-tvV">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcN-Mv-tvV">
                         <rect key="frame" x="8" y="168" width="304" height="115"/>
                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                         <nil key="textColor"/>
@@ -54,6 +54,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="yMS-Gh-foJ" id="cBc-hs-zFM"/>
+                <outlet property="storyImage" destination="mCv-Mf-s2f" id="Re7-lU-08n"/>
+                <outlet property="titleLabel" destination="tcN-Mv-tvV" id="E85-1I-EWn"/>
+            </connections>
             <point key="canvasLocation" x="34" y="33.5"/>
         </tableViewCell>
     </objects>

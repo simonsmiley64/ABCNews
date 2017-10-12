@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import SDWebImage
 
 class BSecondaryCell: UITableViewCell {
 
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var storyImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +26,11 @@ class BSecondaryCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    public func configureWithNews(newsItem: BNewsItem) {
+        
+        titleLabel.text = newsItem.title
+        dateLabel.text = newsItem.date
+        
+        storyImage.sd_setImage(with: URL(string: newsItem.thumbnailURL!), placeholderImage: UIImage(named: "placeholder.png"))
+    }
 }

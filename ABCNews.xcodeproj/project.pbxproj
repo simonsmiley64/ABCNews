@@ -16,6 +16,8 @@
 		2B6FB6961F8EF4C400C34A85 /* BPrimaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6FB6941F8EF4C400C34A85 /* BPrimaryCell.xib */; };
 		2B6FB6991F8EF4D200C34A85 /* BSecondaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6FB6971F8EF4D200C34A85 /* BSecondaryCell.swift */; };
 		2B6FB69A1F8EF4D200C34A85 /* BSecondaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6FB6981F8EF4D200C34A85 /* BSecondaryCell.xib */; };
+		2B6FB69C1F8F07FB00C34A85 /* BNewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6FB69B1F8F07FB00C34A85 /* BNewsItem.swift */; };
+		2B6FB69E1F8F095400C34A85 /* BAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6FB69D1F8F095400C34A85 /* BAPIManager.swift */; };
 		511985D394E4AF8214734433 /* Pods_ABCNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D07B39481F0D61468963BC00 /* Pods_ABCNews.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		2B6FB6941F8EF4C400C34A85 /* BPrimaryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BPrimaryCell.xib; sourceTree = "<group>"; };
 		2B6FB6971F8EF4D200C34A85 /* BSecondaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSecondaryCell.swift; sourceTree = "<group>"; };
 		2B6FB6981F8EF4D200C34A85 /* BSecondaryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BSecondaryCell.xib; sourceTree = "<group>"; };
+		2B6FB69B1F8F07FB00C34A85 /* BNewsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNewsItem.swift; sourceTree = "<group>"; };
+		2B6FB69D1F8F095400C34A85 /* BAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAPIManager.swift; sourceTree = "<group>"; };
 		BACD7F40E1E4879C72FCF098 /* Pods-ABCNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABCNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-ABCNews/Pods-ABCNews.release.xcconfig"; sourceTree = "<group>"; };
 		BBE6E6594C15343363F1D8E5 /* Pods-ABCNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABCNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ABCNews/Pods-ABCNews.debug.xcconfig"; sourceTree = "<group>"; };
 		D07B39481F0D61468963BC00 /* Pods_ABCNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ABCNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +79,8 @@
 				2B6FB6941F8EF4C400C34A85 /* BPrimaryCell.xib */,
 				2B6FB6971F8EF4D200C34A85 /* BSecondaryCell.swift */,
 				2B6FB6981F8EF4D200C34A85 /* BSecondaryCell.xib */,
+				2B6FB69B1F8F07FB00C34A85 /* BNewsItem.swift */,
+				2B6FB69D1F8F095400C34A85 /* BAPIManager.swift */,
 				2B6FB6831F8EF0CA00C34A85 /* Main.storyboard */,
 				2B6FB6861F8EF0CA00C34A85 /* Assets.xcassets */,
 				2B6FB6881F8EF0CA00C34A85 /* LaunchScreen.storyboard */,
@@ -181,10 +187,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ABCNews/Pods-ABCNews-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -231,8 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B6FB69C1F8F07FB00C34A85 /* BNewsItem.swift in Sources */,
 				2B6FB6801F8EF0CA00C34A85 /* AppDelegate.swift in Sources */,
 				2B6FB6991F8EF4D200C34A85 /* BSecondaryCell.swift in Sources */,
+				2B6FB69E1F8F095400C34A85 /* BAPIManager.swift in Sources */,
 				2B6FB6921F8EF18500C34A85 /* BMainViewController.swift in Sources */,
 				2B6FB6951F8EF4C400C34A85 /* BPrimaryCell.swift in Sources */,
 			);
