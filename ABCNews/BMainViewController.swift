@@ -16,17 +16,24 @@ class BMainViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
 
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        // Register our two custom cells
+        self.tableView.register(UINib(nibName: "BPrimaryCell", bundle: nil), forCellReuseIdentifier: "BPrimaryCell")
+        self.tableView.register(UINib(nibName: "BSecondaryCell", bundle: nil), forCellReuseIdentifier: "BSecondaryCell")
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return indexPath.row == 0 ? 320 : 160;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
-        
-        cell?.backgroundColor = .green
+        let cellString = indexPath.row == 0 ? "BPrimaryCell" : "BSecondaryCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellString)
         
         return cell!
     }
