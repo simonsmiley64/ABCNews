@@ -31,6 +31,6 @@ class BPrimaryCell: UITableViewCell {
         titleLabel.text = newsItem.title
         dateLabel.text = newsItem.date
         
-        storyImage.sd_setImage(with: URL(string: newsItem.imageURL!), placeholderImage: UIImage(named: "placeholder.png"))
+        storyImage.sd_setImage(with: URL(string: newsItem.imageURL!), placeholderImage: UIImage(named: "loading.png"))
     }
 }

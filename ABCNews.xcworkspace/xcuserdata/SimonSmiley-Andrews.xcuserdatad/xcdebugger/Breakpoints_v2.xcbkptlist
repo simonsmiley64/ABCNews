@@ -6,7 +6,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ABCNews/BAPIManager.swift"
@@ -22,7 +22,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ABCNews/BAPIManager.swift"
@@ -38,11 +38,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ABCNews/BNewsItem.swift"
-            timestampString = "529542900.179597"
+            timestampString = "529548273.886315"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ABCNews/BNewsItem.swift"
-            timestampString = "529542900.180108"
+            timestampString = "529548273.886944"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ABCNews/BNewsItem.swift"
-            timestampString = "529542900.180486"
+            timestampString = "529548273.887324"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
@@ -86,15 +86,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ABCNews/BMainViewController.swift"
-            timestampString = "529542900.180899"
+            timestampString = "529548273.88757"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "refreshNewsStories()"
             landmarkType = "7">
          </BreakpointContent>
@@ -102,27 +102,27 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ABCNews/BMainViewController.swift"
-            timestampString = "529542900.181353"
+            timestampString = "529548273.888838"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "refreshNewsStories()"
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "ABCNews.BMainViewController.refreshNewsStories() -&gt; ()"
                   moduleName = "ABCNews"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/SimonSmiley-Andrews/Documents/Projects/BinPress/B2Cloud/ABCNews/ABCNews/BMainViewController.swift"
-                  timestampString = "529541900.147258"
+                  timestampString = "529543027.226061"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "32"
@@ -130,19 +130,83 @@
                   offsetFromSymbolStart = "14">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (__ObjC.NSArray) -&gt; () in ABCNews.BMainViewController.refreshNewsStories() -&gt; ()"
                   moduleName = "ABCNews"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/SimonSmiley-Andrews/Documents/Projects/BinPress/B2Cloud/ABCNews/ABCNews/BMainViewController.swift"
-                  timestampString = "529541900.149611"
+                  timestampString = "529543027.229812"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
                   endingLineNumber = "33"
                   offsetFromSymbolStart = "18">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ABCNews/BSecondaryCell.swift"
+            timestampString = "529548273.89003"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "configureWithNews(newsItem:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ABCNews/BSecondaryCell.swift"
+            timestampString = "529548273.892439"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "configureWithNews(newsItem:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ABCNews.BSecondaryCell.configureWithNews(newsItem: ABCNews.BNewsItem) -&gt; ()"
+                  moduleName = "ABCNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/SimonSmiley-Andrews/Documents/Projects/BinPress/B2Cloud/ABCNews/ABCNews/BSecondaryCell.swift"
+                  timestampString = "529543863.15242"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "847">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.UIImage&gt;, Swift.Optional&lt;Swift.Error&gt;, __C.SDImageCacheType, Swift.Optional&lt;Foundation.URL&gt;) -&gt; () in ABCNews.BSecondaryCell.configureWithNews(newsItem: ABCNews.BNewsItem) -&gt; ()"
+                  moduleName = "ABCNews"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/SimonSmiley-Andrews/Documents/Projects/BinPress/B2Cloud/ABCNews/ABCNews/BSecondaryCell.swift"
+                  timestampString = "529543863.156007"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "27">
                </Location>
             </Locations>
          </BreakpointContent>
