@@ -31,12 +31,6 @@ class BSecondaryCell: UITableViewCell {
         titleLabel.text = newsItem.title
         dateLabel.text = newsItem.date
         
-//        storyImage.sd_setImage(with: URL(string: newsItem.thumbnailURL!), placeholderImage: UIImage(named: "loading.png"), options: []) { (image, error, type, url) in
-//
-//            print("Complete")
-//        }
-        
-        //storyImage.sd_setImage(with: <#T##URL?#>, placeholderImage: <#T##UIImage?#>, options: SDWebImageOptions, completed: <#T##SDExternalCompletionBlock?##SDExternalCompletionBlock?##(UIImage?, Error?, SDImageCacheType, URL?) -> Void#>)
         storyImage.sd_setImage(with: URL(string: newsItem.thumbnailURL!), placeholderImage: UIImage(named: "loading.png"))
     }
 }
